@@ -44,6 +44,7 @@ mv graph_word_lp_web_dsp/exp/swbd/chain/tdnn7q_sp/graph_word_lp_web_dsp_nosp/* m
 mv model-fi $ORIG_DIR/kaldi-serve/model-fi
 cd $ORIG_DIR
 cp -r config/conf kaldi-serve/model-fi/
+mv kaldi-serve/model-fi/phones/word_boundary.int kaldi-serve/model-fi/word_boundary.int
 cp config/model-spec.toml kaldi-serve/
 
 echo "Cleaning up"
